@@ -1,5 +1,11 @@
 # Change log
 
+## Descriptive survey intake and review status — 2026-11-12
+
+Documented how to match an export to the archived survey, record unresolved collection provenance and interpret each paired choice using its own consequence values. Updated the public status of descriptive intake and the confirmation steps for the designated comparison. Item results and the Member C course draft are in the private deliverables. Quantitative input confirmation and matched after-result review remain open. The public diff is limited to documentation.
+
+Checked the private export checksum and the full item tabulation against the archived wording and raw answers. Recalculated the 48 sensitivity optima from saved consequences and checked the cited switches, Pareto counts, screen boundaries and artifact hashes. Verified local links and private Git exclusions.
+
 ## General-audience survey revision — 2026-11-05
 
 Revised the live English pilot for people with no project knowledge: one concrete task-assistant scenario, definitions before model comparisons, 13 multiple-choice questions and one optional comment, with all 14 questions skippable. Four hypothetical paired choices hold the other two features fixed and retain no-preference, neither and insufficient-information alternatives. The public protocol now maps every question to descriptive analysis and keeps ordinal ratings, waiting-time intervals and imagined prices separate from benchmark cutoffs and cardinal weights. Quantitative team elicitation remains a separate facilitated module; analytical assumptions and outputs are unchanged.

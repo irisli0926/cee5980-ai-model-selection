@@ -83,6 +83,15 @@ The proposed three-role split is in [WORK_PLAN.md](WORK_PLAN.md); individual rol
 - Next: ask one person unfamiliar with the project to explain the scenario/terms and one paired choice in their own words; record confusing wording and elapsed time, then freeze the collection version. Analyse public responses descriptively; facilitate the team's quantitative inputs before recomputation.
 - PR: continues [#8](https://github.com/scenariofour/cee5980-ai-model-selection/pull/8); not merged.
 
+### 2026-11-12 — work/scenariofour/member-c-sensitivity — descriptive intake and team-review draft
+
+- Owner: scenariofour, Member C. Files: docs/PREFERENCE_ELICITATION_PROTOCOL.md, docs/SENSITIVITY_AND_REVIEW.md, CHANGELOG.md and this entry. The item report and course draft are in ignored private deliverables.
+- Completed: matched the descriptive survey export to the archived instrument, prepared the English item-level report and drafted the English robustness, preference and decision-theory sections for team review. Updated the public intake procedure and review status.
+- Validation: checked the export checksum, question headers, all item denominators and answer categories, and four A/B mappings. Recalculated the 48 scenario optima and checked cited switches and ties, Pareto counts, screen boundaries, artifact hashes and document links. Checked private Git exclusions.
+- Open: collection provenance, prior exposure, quantitative input confirmation and matched after-result review. A/B's PRs are pending and the shared-code handoff still depends on review of #7.
+- Next: confirm each participant's dated input card for the designated comparison. Show the resulting consequences and trade-offs, then record any confirmed revisions privately. Resolve candidate and validity rules through the reviewed A/B handoff.
+- PR: continues [#8](https://github.com/scenariofour/cee5980-ai-model-selection/pull/8).
+
 ### Entry template
 
 Copy this template for your own branch; preserve existing entries.
