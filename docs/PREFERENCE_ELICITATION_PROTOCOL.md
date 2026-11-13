@@ -80,8 +80,8 @@ Do not recompute resource anchors after an individual's hard screen. Changing ra
 1. Preserve raw responses and instrument version. Check duplicate participant/workflow responses without deleting history; distinguish a replacement from a separate workflow response. Keep team, outside and undisclosed groups separate.
 2. Code hard cutoffs as `numeric`, `none`, `discuss` or `missing`. Validate score cutoffs in [0,100] and resource cutoffs as finite nonnegative values. Inclusive minima use ≥ and inclusive maxima use ≤. Do not clip out-of-range values or interpret an app budget as a benchmark-cost limit.
 3. Resolve meaning, model assumptions and ratings through actual participant discussion. Keep both original and corrected records with reasons. Do not derive weights from the short form's priority choices or infer one from a missing response.
-4. Show a complete input card and obtain explicit participant confirmation. Save its version, date and `confirmed_at` before computing the designated comparison. Exploratory source results already exist; do not claim fully blind initial elicitation.
-5. For each confirmed participant/workflow, report raw consequences, all nondominated candidates, all unscreened additive optima, feasible count, all best feasible optima and ties using absolute score tolerance 1e-12. An empty feasible set remains empty unless a participant explicitly revises a rule.
+4. Show an input card with the workflow, candidate rule, criteria, value functions, anchors, ratings, normalized weights, cutoff statuses and comparison scope. Obtain explicit participant confirmation for that scope. Save the card version, date and `confirmed_at` before computation. A participant can confirm an initial ranking without screening while deciding on cutoffs. A confirmed screen requires every cutoff to be numeric or explicitly absent. Record prior exposure to exploratory results separately.
+5. Report raw consequences, all nondominated candidates and all unscreened additive optima using absolute score tolerance 1e-12. For a confirmed screen, also report the feasible count and all best feasible optima. Record pending feasibility when the screen has unresolved inputs. Record zero feasible candidates and an empty optimum set when a confirmed screen admits no candidates.
 6. Compare participant-derived cases with the labelled illustrative baseline and examine sensitivity. Allow zero weights: dominated candidates can tie when an improved dimension receives zero weight, so do not discard those additive ties silently. Keep Pareto filtering and all-candidate utility maxima conceptually separate.
 7. Retain individual recommendations and disagreements. A proposed mean-weight group scenario requires an agreed aggregation rule and is not consensus by default. Do not let a larger outside sample determine the three team members' weights.
 
@@ -89,10 +89,10 @@ For three members, report paired individual cases and statements such as “two 
 
 ## After-result review
 
-Use a short follow-up tied to the actual confirmed input card and comparison version. First show consequences and trade-offs, not just a winning name. For each matched participant/workflow, record:
+Use a short follow-up tied to the actual confirmed input card and comparison version. Show raw consequences and explain the units and trade-offs in everyday language. If the participant reports uncertainty about what a result means, record the uncertainty, explain the result and ask what they would retain or revise. For each matched participant/workflow, record:
 
 1. participant code and confirmed input version;
-2. which comparison materials were actually seen;
+2. which materials were presented and which the participant reports seeing;
 3. whether the recommendation represents their preferences, with a reason or “not sure”;
 4. what surprised them;
 5. retained/revised objectives, metric relevance, candidate rules, scales, weights and requirements, distinguished separately;
@@ -104,4 +104,4 @@ Where before/after values are compared, retain the same measurement wording, wor
 
 ## Status and next step
 
-The descriptive intake and item-level report are documented in the private project records. Collection provenance, human pretest status, confirmed quantitative inputs and matched after-result review remain unresolved. Live-form links, instrument copies, response records and course drafts stay in ignored `deliverables/member_c/`. The next comparison requires the facilitated input cards, each confirmed and dated for the workflow and model specification to be shown.
+The descriptive intake and item-level report are documented in the private project records. Collection provenance and human pretest status remain unresolved. Live-form links, instrument copies, response records, dated input cards, participant-derived results, matched reviews and course drafts stay in ignored `deliverables/member_c/`.

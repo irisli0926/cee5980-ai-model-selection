@@ -92,6 +92,15 @@ The proposed three-role split is in [WORK_PLAN.md](WORK_PLAN.md); individual rol
 - Next: confirm each participant's dated input card for the designated comparison. Show the resulting consequences and trade-offs, then record any confirmed revisions privately. Resolve candidate and validity rules through the reviewed A/B handoff.
 - PR: continues [#8](https://github.com/scenariofour/cee5980-ai-model-selection/pull/8).
 
+### 2026-11-13 — work/scenariofour/member-c-sensitivity
+
+- Owner: scenariofour, Member C. Files: docs/PREFERENCE_ELICITATION_PROTOCOL.md, docs/SENSITIVITY_AND_REVIEW.md, CHANGELOG.md and this entry.
+- Completed: documented scoped confirmation for a ranking while cutoff decisions remain open, reporting for pending and empty feasible sets, and how to record exposure and interpretation during review. Participant-specific records and results are kept in ignored private deliverables.
+- Validation: checked frozen input and sensitivity artifact hashes, the 48 illustrative cases, tied switch points, clarification boundaries, item-level counts, document links and private exclusions. Seven sensitivity unit tests passed.
+- Open: group review is incomplete. A/B's candidate and measurement questions await reviewed integration, and PR #7 still holds the shared-code handoff.
+- Next: confirm outstanding input cards privately, review the consequences with participants and record any dated revisions. Follow the reviewed A/B handoff before adopting candidate changes.
+- PR: continues [#8](https://github.com/scenariofour/cee5980-ai-model-selection/pull/8).
+
 ### Entry template
 
 Copy this template for your own branch; preserve existing entries.

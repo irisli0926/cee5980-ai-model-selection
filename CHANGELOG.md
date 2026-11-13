@@ -1,5 +1,11 @@
 # Change log
 
+## Confirmed comparison scope and review records — 2026-11-13
+
+Clarified how to freeze a participant's input card for a ranking while cutoff decisions are still open. The protocol records pending feasibility distinctly from a completed screen with zero feasible configurations. It also records the material presented, the participant's reported exposure and questions about interpreting the results. Candidate eligibility, value functions and the illustrative scenarios retain their original specifications.
+
+Verified the frozen snapshot and saved sensitivity hashes, cited scenario outcomes and tied switch points, clarification boundaries, survey item counts and documentation links. Seven existing sensitivity tests passed. Participant records and derived comparisons are kept in the ignored private deliverables.
+
 ## Descriptive survey intake and review status — 2026-11-12
 
 Documented how to match an export to the archived survey, record unresolved collection provenance and interpret each paired choice using its own consequence values. Updated the public status of descriptive intake and the confirmation steps for the designated comparison. Item results and the Member C course draft are in the private deliverables. Quantitative input confirmation and matched after-result review remain open. The public diff is limited to documentation.
