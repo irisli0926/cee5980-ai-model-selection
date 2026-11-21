@@ -16,24 +16,24 @@ For the proposed three-person work split, deliverables, acceptance checks and ro
 
 ## Reproduce
 
-Use Python 3 with requirements.txt, then run `python analysis.py`; or execute `analysis.ipynb` from this directory. The notebook expects analysis.py and data/ alongside it. No API key, paid inference, model training or external interviews are required for the core analysis. environment_used.json records versions used for the included run.
+Use Python 3 with requirements.txt, then run `python analysis.py` and `python sensitivity.py` from this directory. The notebook reproduces the baseline and expects analysis.py and data/ alongside it. Run `python scripts/verify_baseline.py` for an independent audit and `python -m unittest discover -s tests` for the sensitivity tests. No API key or paid inference is required. environment_used.json records versions used for the baseline run.
 
 ## Decision and current stage
 
 The decision is which model configurations to shortlist for a proposed task-management agent under two workflows: structured single-turn calls and missing-parameter clarification. We evaluate workflow score, irrelevant-call avoidance, full-benchmark cost and P95 latency. The outputs show trade-offs and conditional recommendations under specified preferences and requirements.
 
-The quantitative baseline is complete. Genuine group preference review, alternative value-scale checks and final interpretation are next. All current weights and thresholds are illustrative. The normative–constructive comparison connects the explicit decision model to later feedback on objectives, requirements and preferences; the review has not yet occurred.
+The project includes a [BFCL source audit](docs/BFCL_GUIDE.md), [independently verified decision methods and worked examples](docs/DECISION_METHODS_AND_EXAMPLES.md), and [sensitivity analysis and review interpretation](docs/SENSITIVITY_AND_REVIEW.md). The public computations use illustrative weights and thresholds. The design team also completed individually specified comparisons and reviewed the trade-offs. Evidence from that review is documented in the private course report materials.
 
 ## Completed data analysis
 
-- Frozen source snapshot and SHA256 manifest: 109 configurations, 66 retained native-function-calling configurations under recorded rules.
+- Frozen source snapshot and SHA256 manifest: 109 configurations, 66 retained under the recorded `(FC)` suffix and numeric validity rules.
 - Consequence matrices for structured single-turn and missing-parameter multi-turn workflows.
 - Four-objective Pareto sets: 30 and 22 configurations in the initial run.
 - Three illustrative preference profiles, weighted rankings, and an illustrative requirement screen.
 - Sensitivity over 1,771 weight vectors and 1,071 requirement pairs per workflow.
-- Three figures, descriptive summaries, machine-readable results and an executed notebook.
+- Four figures, descriptive summaries, machine-readable results, sensitivity checks and an executed baseline notebook.
 
-The initial requirement screen leaves 14 structured-call configurations feasible and no clarification configurations feasible. This is a conditional result under the documented screen, not a conclusion that clarification models are unusable.
+The illustrative requirement screen leaves 14 structured-call configurations feasible and zero clarification configurations feasible within the 66-row baseline. The [eligibility audit](docs/BFCL_GUIDE.md#8-eligibility-and-comparability-audit) identifies GLM-4.6 (FC thinking), an excluded row that would satisfy all four clarification requirements.
 
 Inspect the [preliminary findings](PRELIMINARY_RESULTS.md), [numerical summary](results/summary.json), [eligibility audit](results/eligibility_audit.csv), [weight sensitivity](results/preference_grid_selection_shares.csv) and [requirement sensitivity](results/threshold_grid.csv). The [trade-off figure](figures/01_pareto_tradeoffs.png), [weight-sensitivity figure](figures/02_preference_sensitivity.png) and [requirement-sensitivity figure](figures/03_requirement_sensitivity.png) visualize the computed results. Counts are initial results, not invariants to preserve after justified model changes.
 
@@ -53,8 +53,8 @@ Private course documents, submission drafts, group responses and shared-document
 
 ## Interpretation boundaries
 
-The application is a prospective design case, not a deployed product. All included weights and thresholds are illustrative, not stakeholder-elicited. Accuracy values are benchmark proxies, not product success probabilities or output determinism. Reported cost covers the entire benchmark, and latency is environment-dependent. Native-FC/numeric eligibility does not establish current endpoint availability or eliminate evaluation-condition differences.
+The application is a prospective design case. Public weights and thresholds are illustrative. Accuracy values are benchmark proxies for the workflows. Reported cost covers the entire benchmark, and latency is environment-dependent. The suffix and numeric screening rules establish eligibility for this analysis. Endpoint availability and evaluation comparability require separate checks.
 
-The same illustrative profile is applied to both workflows so changes of task score can be distinguished from changes of preferences. Cost/latency use observed eligible-set min/max value anchors; sensitivity to outliers, alternative value scales and practical candidate restrictions remains important. An empty feasible set is a result to explain, not a reason to silently relax requirements.
+The same illustrative profiles apply to both workflows. Cost and latency use observed eligible-set minimum and maximum anchors. The sensitivity extension tests alternative resource value scales, extreme observations, and changing anchors. Practical candidate restrictions and deployment-specific requirements would need an explicit decision and further evidence.
 
 Data and source measurements retain their original authorship and applicable terms; this project does not relicense third-party material. See DATA_SOURCES.md.
