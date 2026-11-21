@@ -1,5 +1,9 @@
 # Change log
 
+## Add the final project review package (2026-11-21)
+
+Added the final report in PDF, Word and Git-readable formats, the course rubric and assignment requirements, the original TA feedback transcribed from the proposal-revision discussion, the team's earlier response, and a read-only Claude audit. Linked the package from the repository README and included the synthetic Qwen run evidence that supports the report appendix. The baseline and sensitivity calculations are unchanged.
+
 ## Audit candidate eligibility and joint clarification requirements (2026-11-21)
 
 Added a four-scenario candidate-set comparison, exact clarification–P95 feasibility boundary and a worked example of a Pareto configuration that cannot maximize the baseline linear additive score. The audit uses the frozen data, original anchors, profiles and screen. At the original 15 s ceiling, admitting the single excluded GLM-4.6 row changes maximum available clarification from 58% to 63%, while the original profiles keep their unscreened winners. Documented the two flagged-row removals as diagnostics. The baseline, prior sensitivity computations and frozen inputs remain intact. Reproduced all 27 data, result and figure files byte-for-byte in an isolated verification directory, ran the independent baseline audit and passed the seven sensitivity unit tests.

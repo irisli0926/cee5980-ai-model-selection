@@ -143,6 +143,13 @@ Cross-check the course report against the integrated public source audit, result
 - Open and next: verify eligibility for the intended setting before treating GLM-4.6 as an accepted candidate. The cause of the zero-call pattern is undetermined. Use the exact boundary to discuss which requirements the team considers firm.
 - PR: [#10](https://github.com/irisli0926/cee5980-ai-model-selection/pull/10).
 
+### 2026-11-21 — submission review materials on work/irisli0926/robustness-audit
+
+- Owner: irisli0926. Added [docs/submission-review](docs/submission-review/README.md) at the project owner's direction so both reviewers can audit the report and analysis from one checkout. It includes the original rubric, Assignment 2 TA feedback as supplied by the owner, the team's response, the assignment overview and a Claude prompt.
+- Evidence: the Word and PDF review copies match the reviewed report, and the Markdown has relative figure links. The optional Qwen test appendix is supported by the synthetic run evidence. The baseline and robustness results are unchanged. Raw participant records and private shared-document links are outside the review package.
+- Validation: compared the five source documents byte for byte, checked local links and the nine-page report body, verified the rubric and verbatim feedback against their sources, checked the synthetic case counts and reran the independent baseline verifier.
+- Next: run the two independent audits, resolve the findings, obtain team sign-off on the submission PDF and identify the Gradescope upload owner. See [PR #10](https://github.com/irisli0926/cee5980-ai-model-selection/pull/10).
+
 ### Entry template
 
 Copy this template for your own branch; preserve existing entries.
