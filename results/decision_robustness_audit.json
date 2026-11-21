@@ -1,0 +1,838 @@
+{
+  "source_sha256": "ede5081a24bc5ac7f9b3b09a52af6bcfcd35aa0f1709239fed979db77a8159a6",
+  "fixed_screen": {
+    "performance_min": 60.0,
+    "avoidance_min": 80.0,
+    "benchmark_cost_max": 100.0,
+    "p95_latency_max": 15.0
+  },
+  "fixed_linear_anchors": {
+    "benchmark_cost": [
+      0.46,
+      355.17
+    ],
+    "p95_latency": [
+      0.96,
+      568.59
+    ]
+  },
+  "added_candidate": "GLM-4.6 (FC thinking)",
+  "omitted_candidates": [
+    "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)",
+    "Ministral-8B-Instruct-2410 (FC)"
+  ],
+  "weight_grid_step": 0.05,
+  "weight_grid_size": 1771,
+  "scenarios": {
+    "baseline": {
+      "candidate_count": 66,
+      "workflows": {
+        "structured": {
+          "pareto_models": [
+            "Amazon-Nova-2-Lite-v1:0 (FC)",
+            "Amazon-Nova-Micro-v1:0 (FC)",
+            "Amazon-Nova-Pro-v1:0 (FC)",
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Command A (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "Falcon3-1B-Instruct (FC)",
+            "GPT-4.1-2025-04-14 (FC)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Grok-4-1-fast-non-reasoning (FC)",
+            "Grok-4-1-fast-reasoning (FC)",
+            "Hammer2.1-3b (FC)",
+            "Hammer2.1-7b (FC)",
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)",
+            "Mistral-small-2506 (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Open-Mistral-Nemo-2407 (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-14B (FC)",
+            "Qwen3-235B-A22B-Instruct-2507 (FC)",
+            "Qwen3-4B-Instruct-2507 (FC)",
+            "ToolACE-2-8B (FC)",
+            "o3-2025-04-16 (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)"
+          ],
+          "pareto_gains": [],
+          "pareto_losses": [],
+          "feasible_models": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Claude-Sonnet-4-5-20250929 (FC)",
+            "Command A (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Hammer2.1-0.5b (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-14B (FC)",
+            "o4-mini-2025-04-16 (FC)"
+          ],
+          "illustrative_profile_winners": {
+            "balanced": [
+              "xLAM-2-32b-fc-r (FC)"
+            ],
+            "quality_focused": [
+              "Hammer2.1-3b (FC)"
+            ],
+            "resource_focused": [
+              "Gemini-2.5-Flash-Lite (FC)"
+            ]
+          },
+          "balanced_winners_after_screen": [
+            "Gemini-2.5-Flash (FC)"
+          ],
+          "pareto_models_optimal_on_weight_grid": [
+            "Amazon-Nova-Micro-v1:0 (FC)",
+            "Amazon-Nova-Pro-v1:0 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Command A Reasoning (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Grok-4-1-fast-non-reasoning (FC)",
+            "Hammer2.1-3b (FC)",
+            "Hammer2.1-7b (FC)",
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)",
+            "Qwen3-0.6B (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)"
+          ]
+        },
+        "clarification": {
+          "pareto_models": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Claude-Sonnet-4-5-20250929 (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "GPT-4.1-2025-04-14 (FC)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "GPT-4.1-nano-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Hammer2.1-7b (FC)",
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)",
+            "Mistral-small-2506 (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Open-Mistral-Nemo-2407 (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-235B-A22B-Instruct-2507 (FC)",
+            "xLAM-2-1b-fc-r (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)",
+            "xLAM-2-70b-fc-r (FC)"
+          ],
+          "pareto_gains": [],
+          "pareto_losses": [],
+          "feasible_models": [],
+          "illustrative_profile_winners": {
+            "balanced": [
+              "xLAM-2-32b-fc-r (FC)"
+            ],
+            "quality_focused": [
+              "xLAM-2-70b-fc-r (FC)"
+            ],
+            "resource_focused": [
+              "xLAM-2-32b-fc-r (FC)"
+            ]
+          },
+          "balanced_winners_after_screen": [],
+          "pareto_models_optimal_on_weight_grid": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Claude-Sonnet-4-5-20250929 (FC)",
+            "Command A Reasoning (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)",
+            "Qwen3-0.6B (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)",
+            "xLAM-2-70b-fc-r (FC)"
+          ]
+        }
+      },
+      "clarification_boundary": [
+        {
+          "p95_ceiling_inclusive_s": 0.96,
+          "maximum_clarification_pct": 3.0,
+          "models_at_jump": [
+            "Qwen3-0.6B (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 1.67,
+          "maximum_clarification_pct": 15.0,
+          "models_at_jump": [
+            "Gemini-2.5-Flash-Lite (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 2.4,
+          "maximum_clarification_pct": 30.5,
+          "models_at_jump": [
+            "GPT-4.1-mini-2025-04-14 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 3.15,
+          "maximum_clarification_pct": 52.5,
+          "models_at_jump": [
+            "Claude-Haiku-4-5-20251001 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 7.56,
+          "maximum_clarification_pct": 58.0,
+          "models_at_jump": [
+            "Claude-Opus-4-5-20251101 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 17.66,
+          "maximum_clarification_pct": 67.5,
+          "models_at_jump": [
+            "xLAM-2-32b-fc-r (FC)"
+          ]
+        }
+      ]
+    },
+    "admit_glm": {
+      "candidate_count": 67,
+      "workflows": {
+        "structured": {
+          "pareto_models": [
+            "Amazon-Nova-2-Lite-v1:0 (FC)",
+            "Amazon-Nova-Micro-v1:0 (FC)",
+            "Amazon-Nova-Pro-v1:0 (FC)",
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Command A (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "Falcon3-1B-Instruct (FC)",
+            "GLM-4.6 (FC thinking)",
+            "GPT-4.1-2025-04-14 (FC)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Grok-4-1-fast-non-reasoning (FC)",
+            "Grok-4-1-fast-reasoning (FC)",
+            "Hammer2.1-3b (FC)",
+            "Hammer2.1-7b (FC)",
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)",
+            "Mistral-small-2506 (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Open-Mistral-Nemo-2407 (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-14B (FC)",
+            "Qwen3-235B-A22B-Instruct-2507 (FC)",
+            "Qwen3-4B-Instruct-2507 (FC)",
+            "ToolACE-2-8B (FC)",
+            "o3-2025-04-16 (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)"
+          ],
+          "pareto_gains": [
+            "GLM-4.6 (FC thinking)"
+          ],
+          "pareto_losses": [],
+          "feasible_models": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Claude-Sonnet-4-5-20250929 (FC)",
+            "Command A (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "GLM-4.6 (FC thinking)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Hammer2.1-0.5b (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-14B (FC)",
+            "o4-mini-2025-04-16 (FC)"
+          ],
+          "illustrative_profile_winners": {
+            "balanced": [
+              "xLAM-2-32b-fc-r (FC)"
+            ],
+            "quality_focused": [
+              "Hammer2.1-3b (FC)"
+            ],
+            "resource_focused": [
+              "Gemini-2.5-Flash-Lite (FC)"
+            ]
+          },
+          "balanced_winners_after_screen": [
+            "Gemini-2.5-Flash (FC)"
+          ],
+          "pareto_models_optimal_on_weight_grid": [
+            "Amazon-Nova-Micro-v1:0 (FC)",
+            "Amazon-Nova-Pro-v1:0 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Command A Reasoning (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Grok-4-1-fast-non-reasoning (FC)",
+            "Hammer2.1-3b (FC)",
+            "Hammer2.1-7b (FC)",
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)",
+            "Qwen3-0.6B (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)"
+          ]
+        },
+        "clarification": {
+          "pareto_models": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Claude-Sonnet-4-5-20250929 (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "GLM-4.6 (FC thinking)",
+            "GPT-4.1-2025-04-14 (FC)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "GPT-4.1-nano-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Hammer2.1-7b (FC)",
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)",
+            "Mistral-small-2506 (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Open-Mistral-Nemo-2407 (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-235B-A22B-Instruct-2507 (FC)",
+            "xLAM-2-1b-fc-r (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)",
+            "xLAM-2-70b-fc-r (FC)"
+          ],
+          "pareto_gains": [
+            "GLM-4.6 (FC thinking)"
+          ],
+          "pareto_losses": [],
+          "feasible_models": [
+            "GLM-4.6 (FC thinking)"
+          ],
+          "illustrative_profile_winners": {
+            "balanced": [
+              "xLAM-2-32b-fc-r (FC)"
+            ],
+            "quality_focused": [
+              "xLAM-2-70b-fc-r (FC)"
+            ],
+            "resource_focused": [
+              "xLAM-2-32b-fc-r (FC)"
+            ]
+          },
+          "balanced_winners_after_screen": [
+            "GLM-4.6 (FC thinking)"
+          ],
+          "pareto_models_optimal_on_weight_grid": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Command A Reasoning (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "GLM-4.6 (FC thinking)",
+            "Gemini-2.5-Flash (FC)",
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)",
+            "Qwen3-0.6B (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)",
+            "xLAM-2-70b-fc-r (FC)"
+          ]
+        }
+      },
+      "clarification_boundary": [
+        {
+          "p95_ceiling_inclusive_s": 0.96,
+          "maximum_clarification_pct": 3.0,
+          "models_at_jump": [
+            "Qwen3-0.6B (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 1.67,
+          "maximum_clarification_pct": 15.0,
+          "models_at_jump": [
+            "Gemini-2.5-Flash-Lite (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 2.4,
+          "maximum_clarification_pct": 30.5,
+          "models_at_jump": [
+            "GPT-4.1-mini-2025-04-14 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 3.15,
+          "maximum_clarification_pct": 52.5,
+          "models_at_jump": [
+            "Claude-Haiku-4-5-20251001 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 7.56,
+          "maximum_clarification_pct": 58.0,
+          "models_at_jump": [
+            "Claude-Opus-4-5-20251101 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 13.5,
+          "maximum_clarification_pct": 63.0,
+          "models_at_jump": [
+            "GLM-4.6 (FC thinking)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 17.66,
+          "maximum_clarification_pct": 67.5,
+          "models_at_jump": [
+            "xLAM-2-32b-fc-r (FC)"
+          ]
+        }
+      ]
+    },
+    "omit_flagged": {
+      "candidate_count": 64,
+      "workflows": {
+        "structured": {
+          "pareto_models": [
+            "Amazon-Nova-2-Lite-v1:0 (FC)",
+            "Amazon-Nova-Micro-v1:0 (FC)",
+            "Amazon-Nova-Pro-v1:0 (FC)",
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Command A (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "Falcon3-1B-Instruct (FC)",
+            "GPT-4.1-2025-04-14 (FC)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Grok-4-1-fast-non-reasoning (FC)",
+            "Grok-4-1-fast-reasoning (FC)",
+            "Hammer2.1-3b (FC)",
+            "Hammer2.1-7b (FC)",
+            "Mistral-small-2506 (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Open-Mistral-Nemo-2407 (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-14B (FC)",
+            "Qwen3-235B-A22B-Instruct-2507 (FC)",
+            "Qwen3-4B-Instruct-2507 (FC)",
+            "ToolACE-2-8B (FC)",
+            "o3-2025-04-16 (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)"
+          ],
+          "pareto_gains": [],
+          "pareto_losses": [
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)"
+          ],
+          "feasible_models": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Claude-Sonnet-4-5-20250929 (FC)",
+            "Command A (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Hammer2.1-0.5b (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-14B (FC)",
+            "o4-mini-2025-04-16 (FC)"
+          ],
+          "illustrative_profile_winners": {
+            "balanced": [
+              "xLAM-2-32b-fc-r (FC)"
+            ],
+            "quality_focused": [
+              "Hammer2.1-3b (FC)"
+            ],
+            "resource_focused": [
+              "Gemini-2.5-Flash-Lite (FC)"
+            ]
+          },
+          "balanced_winners_after_screen": [
+            "Gemini-2.5-Flash (FC)"
+          ],
+          "pareto_models_optimal_on_weight_grid": [
+            "Amazon-Nova-Micro-v1:0 (FC)",
+            "Amazon-Nova-Pro-v1:0 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Command A Reasoning (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "Falcon3-1B-Instruct (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Grok-4-1-fast-non-reasoning (FC)",
+            "Hammer2.1-3b (FC)",
+            "Hammer2.1-7b (FC)",
+            "Qwen3-0.6B (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)"
+          ]
+        },
+        "clarification": {
+          "pareto_models": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Claude-Sonnet-4-5-20250929 (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "Falcon3-1B-Instruct (FC)",
+            "GPT-4.1-2025-04-14 (FC)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "GPT-4.1-nano-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Hammer2.1-7b (FC)",
+            "Mistral-small-2506 (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Open-Mistral-Nemo-2407 (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-235B-A22B-Instruct-2507 (FC)",
+            "xLAM-2-1b-fc-r (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)",
+            "xLAM-2-70b-fc-r (FC)"
+          ],
+          "pareto_gains": [
+            "Falcon3-1B-Instruct (FC)"
+          ],
+          "pareto_losses": [
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)"
+          ],
+          "feasible_models": [],
+          "illustrative_profile_winners": {
+            "balanced": [
+              "xLAM-2-32b-fc-r (FC)"
+            ],
+            "quality_focused": [
+              "xLAM-2-70b-fc-r (FC)"
+            ],
+            "resource_focused": [
+              "xLAM-2-32b-fc-r (FC)"
+            ]
+          },
+          "balanced_winners_after_screen": [],
+          "pareto_models_optimal_on_weight_grid": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Claude-Sonnet-4-5-20250929 (FC)",
+            "Command A Reasoning (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "Falcon3-1B-Instruct (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Qwen3-0.6B (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)",
+            "xLAM-2-70b-fc-r (FC)"
+          ]
+        }
+      },
+      "clarification_boundary": [
+        {
+          "p95_ceiling_inclusive_s": 0.96,
+          "maximum_clarification_pct": 3.0,
+          "models_at_jump": [
+            "Qwen3-0.6B (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 1.67,
+          "maximum_clarification_pct": 15.0,
+          "models_at_jump": [
+            "Gemini-2.5-Flash-Lite (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 2.4,
+          "maximum_clarification_pct": 30.5,
+          "models_at_jump": [
+            "GPT-4.1-mini-2025-04-14 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 3.15,
+          "maximum_clarification_pct": 52.5,
+          "models_at_jump": [
+            "Claude-Haiku-4-5-20251001 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 7.56,
+          "maximum_clarification_pct": 58.0,
+          "models_at_jump": [
+            "Claude-Opus-4-5-20251101 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 17.66,
+          "maximum_clarification_pct": 67.5,
+          "models_at_jump": [
+            "xLAM-2-32b-fc-r (FC)"
+          ]
+        }
+      ]
+    },
+    "both_changes": {
+      "candidate_count": 65,
+      "workflows": {
+        "structured": {
+          "pareto_models": [
+            "Amazon-Nova-2-Lite-v1:0 (FC)",
+            "Amazon-Nova-Micro-v1:0 (FC)",
+            "Amazon-Nova-Pro-v1:0 (FC)",
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Command A (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "Falcon3-1B-Instruct (FC)",
+            "GLM-4.6 (FC thinking)",
+            "GPT-4.1-2025-04-14 (FC)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Grok-4-1-fast-non-reasoning (FC)",
+            "Grok-4-1-fast-reasoning (FC)",
+            "Hammer2.1-3b (FC)",
+            "Hammer2.1-7b (FC)",
+            "Mistral-small-2506 (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Open-Mistral-Nemo-2407 (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-14B (FC)",
+            "Qwen3-235B-A22B-Instruct-2507 (FC)",
+            "Qwen3-4B-Instruct-2507 (FC)",
+            "ToolACE-2-8B (FC)",
+            "o3-2025-04-16 (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)"
+          ],
+          "pareto_gains": [
+            "GLM-4.6 (FC thinking)"
+          ],
+          "pareto_losses": [
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)"
+          ],
+          "feasible_models": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Claude-Sonnet-4-5-20250929 (FC)",
+            "Command A (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "GLM-4.6 (FC thinking)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Hammer2.1-0.5b (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-14B (FC)",
+            "o4-mini-2025-04-16 (FC)"
+          ],
+          "illustrative_profile_winners": {
+            "balanced": [
+              "xLAM-2-32b-fc-r (FC)"
+            ],
+            "quality_focused": [
+              "Hammer2.1-3b (FC)"
+            ],
+            "resource_focused": [
+              "Gemini-2.5-Flash-Lite (FC)"
+            ]
+          },
+          "balanced_winners_after_screen": [
+            "Gemini-2.5-Flash (FC)"
+          ],
+          "pareto_models_optimal_on_weight_grid": [
+            "Amazon-Nova-Micro-v1:0 (FC)",
+            "Amazon-Nova-Pro-v1:0 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Command A Reasoning (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "Falcon3-1B-Instruct (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Grok-4-1-fast-non-reasoning (FC)",
+            "Hammer2.1-3b (FC)",
+            "Hammer2.1-7b (FC)",
+            "Qwen3-0.6B (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)"
+          ]
+        },
+        "clarification": {
+          "pareto_models": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Claude-Sonnet-4-5-20250929 (FC)",
+            "Command A Reasoning (FC)",
+            "Command R7B (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "Falcon3-1B-Instruct (FC)",
+            "GLM-4.6 (FC thinking)",
+            "GPT-4.1-2025-04-14 (FC)",
+            "GPT-4.1-mini-2025-04-14 (FC)",
+            "GPT-4.1-nano-2025-04-14 (FC)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Hammer2.1-7b (FC)",
+            "Mistral-small-2506 (FC)",
+            "Moonshotai-Kimi-K2-Instruct (FC)",
+            "Open-Mistral-Nemo-2407 (FC)",
+            "Qwen3-0.6B (FC)",
+            "Qwen3-235B-A22B-Instruct-2507 (FC)",
+            "xLAM-2-1b-fc-r (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)",
+            "xLAM-2-70b-fc-r (FC)"
+          ],
+          "pareto_gains": [
+            "Falcon3-1B-Instruct (FC)",
+            "GLM-4.6 (FC thinking)"
+          ],
+          "pareto_losses": [
+            "Llama-3.1-Nemotron-Ultra-253B-v1 (FC)"
+          ],
+          "feasible_models": [
+            "GLM-4.6 (FC thinking)"
+          ],
+          "illustrative_profile_winners": {
+            "balanced": [
+              "xLAM-2-32b-fc-r (FC)"
+            ],
+            "quality_focused": [
+              "xLAM-2-70b-fc-r (FC)"
+            ],
+            "resource_focused": [
+              "xLAM-2-32b-fc-r (FC)"
+            ]
+          },
+          "balanced_winners_after_screen": [
+            "GLM-4.6 (FC thinking)"
+          ],
+          "pareto_models_optimal_on_weight_grid": [
+            "Claude-Haiku-4-5-20251001 (FC)",
+            "Claude-Opus-4-5-20251101 (FC)",
+            "Command A Reasoning (FC)",
+            "DeepSeek-V3.2-Exp (FC)",
+            "Falcon3-1B-Instruct (FC)",
+            "GLM-4.6 (FC thinking)",
+            "Gemini-2.5-Flash (FC)",
+            "Gemini-2.5-Flash-Lite (FC)",
+            "Qwen3-0.6B (FC)",
+            "xLAM-2-32b-fc-r (FC)",
+            "xLAM-2-3b-fc-r (FC)",
+            "xLAM-2-70b-fc-r (FC)"
+          ]
+        }
+      },
+      "clarification_boundary": [
+        {
+          "p95_ceiling_inclusive_s": 0.96,
+          "maximum_clarification_pct": 3.0,
+          "models_at_jump": [
+            "Qwen3-0.6B (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 1.67,
+          "maximum_clarification_pct": 15.0,
+          "models_at_jump": [
+            "Gemini-2.5-Flash-Lite (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 2.4,
+          "maximum_clarification_pct": 30.5,
+          "models_at_jump": [
+            "GPT-4.1-mini-2025-04-14 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 3.15,
+          "maximum_clarification_pct": 52.5,
+          "models_at_jump": [
+            "Claude-Haiku-4-5-20251001 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 7.56,
+          "maximum_clarification_pct": 58.0,
+          "models_at_jump": [
+            "Claude-Opus-4-5-20251101 (FC)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 13.5,
+          "maximum_clarification_pct": 63.0,
+          "models_at_jump": [
+            "GLM-4.6 (FC thinking)"
+          ]
+        },
+        {
+          "p95_ceiling_inclusive_s": 17.66,
+          "maximum_clarification_pct": 67.5,
+          "models_at_jump": [
+            "xLAM-2-32b-fc-r (FC)"
+          ]
+        }
+      ]
+    }
+  },
+  "clarification_weighted_sum_example": {
+    "field_order": [
+      "clarification",
+      "avoidance",
+      "benchmark_cost",
+      "p95_latency"
+    ],
+    "target": "GPT-4.1-2025-04-14 (FC)",
+    "target_consequences": [
+      32.5,
+      86.52,
+      100.75,
+      4.01
+    ],
+    "witness_models": [
+      "Claude-Haiku-4-5-20251001 (FC)",
+      "Gemini-2.5-Flash-Lite (FC)"
+    ],
+    "witness_midpoint": [
+      33.75,
+      88.805,
+      10.89,
+      2.41
+    ]
+  }
+}

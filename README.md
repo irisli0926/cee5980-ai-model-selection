@@ -18,6 +18,8 @@ For the proposed three-person work split, deliverables, acceptance checks and ro
 
 Use Python 3 with requirements.txt, then run `python analysis.py` and `python sensitivity.py` from this directory. The notebook reproduces the baseline and expects analysis.py and data/ alongside it. Run `python scripts/verify_baseline.py` for an independent audit and `python -m unittest discover -s tests` for the sensitivity tests. No API key or paid inference is required. environment_used.json records versions used for the baseline run.
 
+Run `python -m scripts.decision_robustness_audit` for the [candidate-set scenarios, exact clarification boundary, and comparison of Pareto and weighted optima](docs/DECISION_ROBUSTNESS_AUDIT.md).
+
 ## Decision and current stage
 
 The decision is which model configurations to shortlist for a proposed task-management agent under two workflows: structured single-turn calls and missing-parameter clarification. We evaluate workflow score, irrelevant-call avoidance, full-benchmark cost and P95 latency. The outputs show trade-offs and conditional recommendations under specified preferences and requirements.
