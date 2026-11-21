@@ -133,6 +133,7 @@ Cross-check the course report against the integrated public source audit, result
 - Files: integrated A/B/C's guides, scripts, verification records and sensitivity outputs. Updated `README.md`, `PRELIMINARY_RESULTS.md`, `docs/BFCL_GUIDE.md`, `CHANGELOG.md` and this handoff to describe the integrated baseline and its eligibility boundary.
 - Validation: reproduced `analysis.py` and `sensitivity.py`, ran `scripts/verify_baseline.py`, passed all seven sensitivity unit tests and all six notebook cells, checked the frozen input and confirmed that all 25 analyzed data, result and figure files were byte-identical after the run. Counts remain 109 source rows, 66 included rows, 30 and 22 Pareto rows, and 14 and 0 rows passing the illustrative screens.
 - Open and next: reconcile the report wording with the final reviewed draft and confirm individual contributions privately. The report should name the excluded GLM-4.6 counterexample and explain the unresolved zero-call score pattern. A broader eligibility rule would require an explicit follow-up decision and rerun.
+- Integration PR: [#9](https://github.com/irisli0926/cee5980-ai-model-selection/pull/9).
 
 ### Entry template
 
