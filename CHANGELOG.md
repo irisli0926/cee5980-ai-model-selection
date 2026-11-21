@@ -1,5 +1,9 @@
 # Change log
 
+## Integrate the final project analyses (2026-11-21)
+
+Combined the BFCL source audit, independent baseline verification and examples, and sensitivity and preference-review extension. Retained the frozen source, the 66-configuration suffix-based baseline, all value functions and illustrative thresholds. Clarified that the excluded GLM-4.6 (FC thinking) passes the clarification screen and that the completed individual preference review is documented privately. Reproduced the baseline and sensitivity outputs, ran the independent audit, passed all seven sensitivity tests and executed all six notebook cells. All 25 data, result and figure files in the verification run matched the integrated versions byte for byte.
+
 ## Review outcomes and evidence timing — 2026-11-21
 
 The preference-review protocol now records retained settings, deferred choices and requests for further evidence alongside numerical revisions. Retrospective session summaries preserve the reported dates and their precision, with a separate audit date. The public sensitivity interpretation points to current private review records, and its generated verification record continues to describe the original sensitivity run.

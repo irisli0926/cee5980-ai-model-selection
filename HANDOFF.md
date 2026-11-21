@@ -5,20 +5,15 @@ Read this with AGENTS.md and ONBOARDING.md before starting. Fetch canonical main
 
 ## Integrated baseline
 
-The public baseline contains the frozen BFCL snapshot, eligibility audit, consequence matrices for two workflows, exact Pareto sets, illustrative weighted and requirement comparisons, sensitivity grids, three figures and an executed notebook. See PRELIMINARY_RESULTS.md and results/summary.json for numbers and limitations.
+The public analysis includes the frozen BFCL snapshot, eligibility audit, consequence matrices, exact Pareto sets, illustrative comparisons, sensitivity results, four figures and an executed baseline notebook. The [source guide](docs/BFCL_GUIDE.md), [decision methods](docs/DECISION_METHODS_AND_EXAMPLES.md) and [sensitivity extension](docs/SENSITIVITY_AND_REVIEW.md) document the integrated A/B/C work.
 
 Source integrity, independent Pareto calculations, scoring checks, notebook execution and figure review were completed for the baseline; details are in results/verification_report.json. These are prior checks, not a claim that every future revision has been validated.
 
-All current weights and thresholds are illustrative. Actual group preference feedback has not been recorded in the public analysis. The study screens configurations; it does not establish deployment readiness or whether older models are more deterministic. Private course/report materials remain outside Git.
+The public baseline uses illustrative profiles and thresholds. The design team completed individual preference comparisons and review in the private course materials. The candidate rule retains 66 configurations by suffix and numeric checks. Zero feasible clarification configurations applies to that set. An excluded row passes all four illustrative clarification thresholds, and a broader eligibility definition would need a verified mapping and recomputation.
 
 ## Next useful work
 
-The proposed three-role split is in [WORK_PLAN.md](WORK_PLAN.md); individual role claims remain to be confirmed. At the start of a task, state your GitHub handle, selected role/task and files in your branch's entry; avoid two simultaneous editors of analysis.py. Member B verifies the baseline before handing shared analysis editing to Member C for sensitivity work.
-
-1. Reproduce the baseline and audit source metric definitions and candidate comparability.
-2. Test sensitivity to value scales/outliers and a narrower practical candidate set.
-3. Collect genuine group preference input privately, then document how the review changes the decision framing or recommendation without publishing private responses.
-4. Integrate verified findings into the course report and presentation.
+Cross-check the course report against the integrated public source audit, results and private review records. Any future eligibility or proxy-validity revision needs a documented rule and a fresh analysis of both workflows. Continue using the [ownership and review workflow](WORK_PLAN.md) for shared changes.
 
 ## Task entries
 
@@ -131,6 +126,13 @@ The proposed three-role split is in [WORK_PLAN.md](WORK_PLAN.md); individual rol
 - Open: A/B candidate and measurement definitions still need reviewed integration. The shared-code editor handoff remains conditional on PR #7 review.
 - Next: review A/B/C's PRs, settle the integrated specification and use the private report handoff for course-report assembly. Regenerate affected numerical outputs only after an integrated analytical change requires it.
 - PR: continues [#8](https://github.com/scenariofour/cee5980-ai-model-selection/pull/8).
+
+### 2026-11-21 — work/irisli0926/final-project-integration
+
+- Owner: irisli0926. Integrated PRs [#6](https://github.com/irisli0926/cee5980-ai-model-selection/pull/6), [#7](https://github.com/irisli0926/cee5980-ai-model-selection/pull/7) and [#8](https://github.com/irisli0926/cee5980-ai-model-selection/pull/8) into the integration branch. Resolved the entry insertion conflicts in `CHANGELOG.md` and `HANDOFF.md` while preserving the three original histories.
+- Files: integrated A/B/C's guides, scripts, verification records and sensitivity outputs. Updated `README.md`, `PRELIMINARY_RESULTS.md`, `docs/BFCL_GUIDE.md`, `CHANGELOG.md` and this handoff to describe the integrated baseline and its eligibility boundary.
+- Validation: reproduced `analysis.py` and `sensitivity.py`, ran `scripts/verify_baseline.py`, passed all seven sensitivity unit tests and all six notebook cells, checked the frozen input and confirmed that all 25 analyzed data, result and figure files were byte-identical after the run. Counts remain 109 source rows, 66 included rows, 30 and 22 Pareto rows, and 14 and 0 rows passing the illustrative screens.
+- Open and next: reconcile the report wording with the final reviewed draft and confirm individual contributions privately. The report should name the excluded GLM-4.6 counterexample and explain the unresolved zero-call score pattern. A broader eligibility rule would require an explicit follow-up decision and rerun.
 
 ### Entry template
 

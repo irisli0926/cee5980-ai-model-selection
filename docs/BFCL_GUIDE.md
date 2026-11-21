@@ -11,7 +11,7 @@ Status: Member A deliverable (source audit). It changes no code, raw data, thres
 | Raw file | `data/bfcl_snapshot_2026-10-21.csv`, 109 rows, 36 columns | file itself |
 | Retrieved | 2026-10-22 01:08 UTC (2026-10-21 in US Eastern time) from `https://gorilla.cs.berkeley.edu/data_overall.csv` | `data/bfcl_snapshot_manifest.json` |
 | SHA256 | `ede5081a24bc5ac7f9b3b09a52af6bcfcd35aa0f1709239fed979db77a8159a6`, rechecked 2026-11-03, matches the manifest | `sha256sum` |
-| Benchmark version | BFCL V4, leaderboard marked "Last Updated: 2025-12-16" | leaderboard page [1] |
+| Benchmark version | BFCL V4, based on the CSV frozen on October 21, 2026 Eastern time | frozen CSV and manifest, leaderboard page [1] |
 | Evaluation code | leaderboard states commit `f7cf735`, equivalently PyPI `bfcl-eval==2025.12.17` | leaderboard page [1] |
 
 All code and test files cited below were read from the `bfcl-eval==2025.12.17` release [2], the version the leaderboard names for reproduction. The current GitHub `main` [3] has the same scoring weights and cost formula. The snapshot date is a retrieval date. It is not a model release date, and the file has not been compared with whatever the live CSV says today.
@@ -46,7 +46,7 @@ All accuracy columns are percentages of test entries passed, 0 to 100. "Use here
 
 | Original column | Project name | Meaning | Units | Better | Use here | Main limitation |
 | --- | --- | --- | --- | --- | --- | --- |
-| `Model` | `model` | display name: model plus mode in brackets | text | n/a | ID; the `(FC)` suffix decides eligibility | label does not always match the code's FC flag (section 7) |
+| `Model` | `model` | display name: model plus mode in brackets | text | n/a | ID; the `(FC)` suffix is part of baseline eligibility | label can disagree with the code's FC flag (section 8.2) |
 | `Non-Live Simple AST` | `structured` | single-call accuracy, unweighted mean of Python/Java/JS sets | % | higher | workflow criterion, structured | static parsing only; small JS set has equal weight |
 | `Multi Turn Miss Param` | `clarification` | share of 200 conversations fully correct when a parameter is missing | % | higher | workflow criterion, clarification | simulated APIs; all-or-nothing per conversation |
 | `Irrelevance Detection` | `avoidance` | share of no-tool-fits requests answered without a call, mean of 2 sets | % | higher | avoidance criterion, both workflows | rewards silence and broken output equally; not a security measure |
@@ -127,7 +127,7 @@ GLM-4.6 (FC thinking) matters for the results. Its raw values are clarification 
 
 What `is_fc_model` means for local open models with custom handlers has not been confirmed in the documentation, so the flag is evidence, not proof. **Proposed correction:** decide eligibility from an explicit, documented mode list (for example the source flag, or the suffix plus named exceptions) and record the decision for all 7 rows above.
 
-**8.3 Two included rows look like failed runs.** Ministral-8B-Instruct-2410 (FC) and Llama-3.1-Nemotron-Ultra-253B-v1 (FC) score 0% on every non-live, live and multi-turn column and 100% on Irrelevance Detection. Section 3 explains the mechanism: output with no decodable call passes irrelevance tests. Consequences in the current analysis:
+**8.3 Two included rows have zero call scores and perfect irrelevance scores.** Ministral-8B-Instruct-2410 (FC) and Llama-3.1-Nemotron-Ultra-253B-v1 (FC) score 0% on every non-live, live and multi-turn column and 100% on Irrelevance Detection. An output with no decodable call passes an irrelevance test. The cause of the pattern in these two rows is unresolved. Consequences in the current analysis:
 
 - Nemotron-Ultra (cost 0.72, P95 2.40, avoidance 100) is in **both** Pareto sets, because no other row matches its avoidance score at that cost and latency.
 - Ministral-8B sets the P95 anchor maximum of 568.59 s, which compresses everyone else's latency values toward 1.

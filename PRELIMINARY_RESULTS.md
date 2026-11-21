@@ -1,6 +1,6 @@
 # Preliminary results
 
-Frozen input: 109 configurations; eligible native-FC configurations: 66.
+The frozen input contains 109 configurations. The baseline retains 66 under the `(FC)` suffix and numeric validity rules.
 These are completed screening computations, not final deployment recommendations.
 
 **All preference profiles and screening thresholds are illustrative, not stakeholder-elicited.**
@@ -21,6 +21,8 @@ These are completed screening computations, not final deployment recommendations
 - Illustrative requirement screen: 0 feasible configurations.
 - Best balanced-value feasible candidate(s): none
 
+The zero count applies to the 66-row baseline. The [source audit](docs/BFCL_GUIDE.md#8-eligibility-and-comparability-audit) documents an excluded configuration, GLM-4.6 (FC thinking), that clears the four clarification thresholds.
+
 ## Completed checks
 - input_hash: passed
 - pareto_direction_and_duplicate_checks: passed
@@ -30,7 +32,7 @@ These are completed screening computations, not final deployment recommendations
 
 ## Boundaries
 - Snapshot screening, not confirmation of current endpoint availability.
-- All weights and thresholds are illustrative; no group elicitation has occurred.
+- Weights and thresholds in these reproduced baseline outputs are illustrative. The later individual review is documented in the private course materials.
 - Benchmark-wide cost and P95 latency are not workflow-specific operating metrics.
 - Benchmark accuracy is not deployment success probability or output determinism.
 - Selection share depends on the specified preference grid and tie handling; it is not empirical probability.
