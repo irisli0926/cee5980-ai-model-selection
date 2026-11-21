@@ -1,5 +1,11 @@
 # Change log
 
+## Independent submission audit and current method status (2026-11-21)
+
+Corrected stale pending-integration and review-status wording in the sensitivity guide while preserving its historical task-start and cross-review notes. Added a revision-specific public analysis audit that separates integrated main from the unmerged candidate-set extension. No raw data, code, value functions, weights, thresholds or numerical artifacts changed. Course-report findings and participant-specific calculations remain in ignored local materials.
+
+Validation: reproduced all five requested audit commands at revision `339b5b42fcb96194b1b49d3ebe744908879bbe68` in an isolated archive; all seven sensitivity tests passed and all 27 data/result/figure files were byte-identical after regeneration. Checked the merged integration PR and the open extension PR, the documentation links and private exclusions. The public note distinguishes independent scalar baseline verification from the extension runner's internal assertions. Original participant confirmations, the course template and submission approvals remain team checks.
+
 ## Integrate the final project analyses (2026-11-21)
 
 Combined the BFCL source audit, independent baseline verification and examples, and sensitivity and preference-review extension. Retained the frozen source, the 66-configuration suffix-based baseline, all value functions and illustrative thresholds. Clarified that the excluded GLM-4.6 (FC thinking) passes the clarification screen and that the completed individual preference review is documented privately. Reproduced the baseline and sensitivity outputs, ran the independent audit, passed all seven sensitivity tests and executed all six notebook cells. All 25 data, result and figure files in the verification run matched the integrated versions byte for byte.
