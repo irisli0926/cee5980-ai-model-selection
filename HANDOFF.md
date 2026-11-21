@@ -23,6 +23,7 @@ Cross-check the course report against the integrated public source audit, result
 - Completed: audited requested revision `339b5b42fcb96194b1b49d3ebe744908879bbe68` independently, corrected stale integration/review status and recorded public numerical verification. Detailed submission findings and participant arithmetic remain in ignored local materials; the course-review package is not included in this branch.
 - Validation: all five requested reproduction commands completed in an isolated archive; seven tests passed; all 27 data/result/figure files were byte-identical. Checked documentation links, private exclusions and GitHub integration status. No analytical outputs changed. Original participant confirmations and final submission approvals were not independently verified.
 - Open and next: review the documentation PR and the separate candidate-set extension; settle eligibility policy before changing the baseline. The team must confirm its private report records and final submission requirements. No merge or course submission was performed.
+- PR: [#12](https://github.com/irisli0926/cee5980-ai-model-selection/pull/12).
 
 ### 2026-10-21 — work/scenariofour/shared-handoff
 
