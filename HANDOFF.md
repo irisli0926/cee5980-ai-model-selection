@@ -141,6 +141,7 @@ Cross-check the course report against the integrated public source audit, result
 - Completed: compared both eligibility changes singly and jointly at fixed weights, anchors and cutoffs. Reported Pareto membership changes, the full clarification feasibility step function and a worked linear value counterexample. The original 66-row baseline and its 30/22 Pareto counts remain the reference scenario. Inclusion of GLM-4.6 adds one feasible clarification candidate at the original limits in both scenarios in which it is admitted.
 - Validation: reproduced `analysis.py`, `sensitivity.py` and the new audit in an isolated verification directory. The independent baseline verifier and all seven sensitivity unit tests passed. The 27 data, result and figure files were byte-identical after regeneration. An exact decimal cross-check confirmed the eight Pareto and feasibility sets, 224 selected joint-threshold cases and the midpoint example. Reviewed the rendered boundary figure.
 - Open and next: verify eligibility for the intended setting before treating GLM-4.6 as an accepted candidate. The cause of the zero-call pattern is undetermined. Use the exact boundary to discuss which requirements the team considers firm.
+- PR: [#10](https://github.com/irisli0926/cee5980-ai-model-selection/pull/10).
 
 ### Entry template
 
