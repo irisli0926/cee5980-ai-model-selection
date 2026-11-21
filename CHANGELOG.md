@@ -1,5 +1,9 @@
 # Change log
 
+## Audit candidate eligibility and joint clarification requirements (2026-11-21)
+
+Added a four-scenario candidate-set comparison, exact clarification–P95 feasibility boundary and a worked example of a Pareto configuration that cannot maximize the baseline linear additive score. The audit uses the frozen data, original anchors, profiles and screen. At the original 15 s ceiling, admitting the single excluded GLM-4.6 row changes maximum available clarification from 58% to 63%, while the original profiles keep their unscreened winners. Documented the two flagged-row removals as diagnostics. The baseline, prior sensitivity computations and frozen inputs remain intact. Reproduced all 27 data, result and figure files byte-for-byte in an isolated verification directory, ran the independent baseline audit and passed the seven sensitivity unit tests.
+
 ## Integrate the final project analyses (2026-11-21)
 
 Combined the BFCL source audit, independent baseline verification and examples, and sensitivity and preference-review extension. Retained the frozen source, the 66-configuration suffix-based baseline, all value functions and illustrative thresholds. Clarified that the excluded GLM-4.6 (FC thinking) passes the clarification screen and that the completed individual preference review is documented privately. Reproduced the baseline and sensitivity outputs, ran the independent audit, passed all seven sensitivity tests and executed all six notebook cells. All 25 data, result and figure files in the verification run matched the integrated versions byte for byte.
