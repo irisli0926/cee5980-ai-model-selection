@@ -102,6 +102,8 @@ Use a short follow-up tied to the actual confirmed input card and comparison ver
 
 Where before/after values are compared, retain the same measurement wording, workflow, ranges and model version or explicitly label the change. Confirm each revised input card before recomputation. Report a change after review as a documented revision; without a controlled design, do not attribute it causally to seeing results. Numerical sensitivity alone is not completed participant co-construction.
 
+Retaining the original settings, deferring a choice and requesting more evidence are review outcomes to record alongside revisions. Reproduce an unchanged comparison to check a reported result when needed. When a participant supplies a retrospective session summary, preserve the reported date, its available precision and the actual audit date. Record unremembered exposure or an uncertain reason as supplied.
+
 ## Status and next step
 
 The descriptive intake and item-level report are documented in the private project records. Collection provenance and human pretest status remain unresolved. Live-form links, instrument copies, response records, dated input cards, participant-derived results, matched reviews and course drafts stay in ignored `deliverables/member_c/`.

@@ -1,5 +1,11 @@
 # Change log
 
+## Review outcomes and evidence timing — 2026-11-21
+
+The preference-review protocol now records retained settings, deferred choices and requests for further evidence alongside numerical revisions. Retrospective session summaries preserve the reported dates and their precision, with a separate audit date. The public sensitivity interpretation points to current private review records, and its generated verification record continues to describe the original sensitivity run.
+
+Prepared the private Member C comparison audit, review synthesis and report handoff. Reproduced the baseline with all existing data/result/figure files byte-identical, checked the saved sensitivity optima independently, verified the private comparison scores and source locators, and passed the seven existing numerical tests. Shared analysis code, frozen inputs and published numerical artifacts retain their recorded specification.
+
 ## Confirmed comparison scope and review records — 2026-11-13
 
 Clarified how to freeze a participant's input card for a ranking while cutoff decisions are still open. The protocol records pending feasibility distinctly from a completed screen with zero feasible configurations. It also records the material presented, the participant's reported exposure and questions about interpreting the results. Candidate eligibility, value functions and the illustrative scenarios retain their original specifications.
