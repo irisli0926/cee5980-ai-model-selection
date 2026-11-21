@@ -76,6 +76,62 @@ The proposed three-role split is in [WORK_PLAN.md](WORK_PLAN.md); individual rol
 - Next: Member C cross-checks these examples, then performs the planned bounded robustness comparisons; Member A reviews the source comments and integrates its own guide via PR. This branch is not merged and does not claim group preference review is complete.
 - PR: [#7](https://github.com/scenariofour/cee5980-ai-model-selection/pull/7).
 
+### 2026-11-05 — work/scenariofour/member-c-sensitivity
+
+- Owner: scenariofour. Role claimed: Member C, as assigned by the user. Started from clean canonical main at 3acb4a3 after fetching A/B's pending branches.
+- Files: sensitivity.py, tests/test_sensitivity.py, docs/SENSITIVITY_AND_REVIEW.md, results/robustness_comparisons.csv, three results/sensitivity_*.csv tables, results/member_c_verification.json, figures/04_preference_paths.png, CHANGELOG.md and this entry. Private blank preference questions remain in ignored deliverables/member_c/.
+- Completed: specified eight scenarios before computation; produced 48 scale/extreme-observation profile comparisons, analytic switching intervals with explicit tied boundaries, requirement-failure partitions and first-feasible boundaries. Added public robustness/review/theory prose and cross-reviewed B's examples at 6b5f761. Prepared identical private questions without inventing responses. Shared analysis.py/notebook and baseline artifacts are unchanged; B's shared-code handoff awaits review/integration of PR #7.
+- Findings: fixed-anchor extreme omissions preserve all six profile/workflow winners. Log resource scales change four of six; cost/union omission with reanchoring changes the structured resource-focused winner. Clarification first becomes feasible at a performance floor of 58% or P95 ceiling of 17.66 s when varying that requirement alone; original requirements remain in force. All results are conditional on the existing suffix-based candidate rule.
+- Validation: python analysis.py passed and all 18 pre-existing data/result/figure/preliminary artifacts stayed byte-identical. Seven synthetic numerical tests passed; independently checked 3,120 scalar scenario scores, baseline Pareto membership (30/22), all 1,771 preference vectors and 1,071 requirement pairs per workflow, 3,996 interior path points, boundary ties and requirement partitions. Reviewed the new figure. pip check, Python compilation, documentation links and diff whitespace checks passed.
+- Open: actual participant responses/review, candidate/validity-rule decisions from A/B, and integration of their unmerged PRs. This extension does not release B's shared-code ownership or establish group consensus.
+- Next: A/B review the sensitivity assumptions and outputs; collect three real private preference responses, freeze confirmed comparison inputs, then rerun only approved revisions. Maintainer integrates reviewed PRs and consolidates artifacts.
+- PR: [#8](https://github.com/scenariofour/cee5980-ai-model-selection/pull/8); open for review, not merged.
+
+### 2026-11-05 — work/scenariofour/member-c-sensitivity — preference research
+
+- Owner: scenariofour, Member C. Files: docs/PREFERENCE_ELICITATION_PROTOCOL.md, a scoped link in docs/SENSITIVITY_AND_REVIEW.md, CHANGELOG.md and this entry. Live form links, instrument wording, empty input templates and research notes remain in ignored deliverables/member_c/.
+- Completed: reviewed primary AAPOR/Pew/Census and government MCDA guidance; documented a question-to-analysis map, swing-weight and hard-cutoff procedure, confirmation gate and matched review. Added explicit separation of team decision participants from optional outside respondents. A separate 23-question English pilot is published; the eight-question form remains exploratory.
+- Validation: instrument has five sections, nine short-answer fields, three paragraphs and eleven multiple-choice questions. Checked the saved form after reconnecting, traversed all five live pages using a labelled unsubmitted UI draft, checked NONE/DISCUSS/blank input paths, cleared that draft and observed zero submitted responses. Email collection and public response summaries are off. Checked English wording, anchors against summary.json, source/local links and diff scope. No experiments rerun for this documentation task; analytical inputs and outputs are unchanged.
+- Open: actual human comprehension pilot and completion-time measurement, production wording freeze, actual responses and explicit individual input confirmation. Outside answers without follow-up remain exploratory. No scoring rubric was present among the available private references, so no claim of guaranteed grading compliance is made.
+- Next: one comparable student explains the cost, P95, cutoff and swing-rating questions in their own words; revise/version the pilot if needed, then collect responses. Confirm full input cards before a designated comparison and document actual revisions after results are shown.
+- PR: continues [#8](https://github.com/scenariofour/cee5980-ai-model-selection/pull/8); not merged.
+
+### 2026-11-05 — work/scenariofour/member-c-sensitivity — general-audience survey revision
+
+- Owner: scenariofour, Member C. Files: docs/PREFERENCE_ELICITATION_PROTOCOL.md, docs/SENSITIVITY_AND_REVIEW.md, CHANGELOG.md and this entry. Current/archived instrument copies, form links and empty response templates remain private in ignored deliverables/member_c/. Shared analysis.py, source data and generated numerical outputs were not edited.
+- Completed: replaced the technical live pilot with a 14-question English survey for respondents with no project knowledge; 13 multiple-choice questions plus one optional paragraph, all skippable. Added a concrete scenario, definitions and four imaginary model comparisons with the other two features fixed. Public methods specify a question-to-analysis map, per-question denominators and separate missing/uncertain/no-choice categories. Quantitative swing-weight/cutoff elicitation is reserved for a facilitated team session rather than inferred from generic importance answers.
+- Validation: observed zero submitted responses before and after editing; traversed all three live pages (5/3/6 questions) without answering or submitting and returned to blank page 1. Checked the saved title, glossary, all comparison choices, optional paragraph, email/sign-in settings and hidden public response summaries. Verified the English instrument structure, archived v1 preservation, headers-only response template, public documentation references, private exclusions and scoped whitespace diff. No experiments rerun; analysis inputs and outputs are unchanged.
+- Open: human comprehension pilot and actual completion time; final production wording; real responses; separately confirmed team inputs and matched after-result review. Four scenario choices do not identify cardinal weights or real willingness to pay, and outside convenience responses do not establish team consensus or population preferences.
+- Next: ask one person unfamiliar with the project to explain the scenario/terms and one paired choice in their own words; record confusing wording and elapsed time, then freeze the collection version. Analyse public responses descriptively; facilitate the team's quantitative inputs before recomputation.
+- PR: continues [#8](https://github.com/scenariofour/cee5980-ai-model-selection/pull/8); not merged.
+
+### 2026-11-12 — work/scenariofour/member-c-sensitivity — descriptive intake and team-review draft
+
+- Owner: scenariofour, Member C. Files: docs/PREFERENCE_ELICITATION_PROTOCOL.md, docs/SENSITIVITY_AND_REVIEW.md, CHANGELOG.md and this entry. The item report and course draft are in ignored private deliverables.
+- Completed: matched the descriptive survey export to the archived instrument, prepared the English item-level report and drafted the English robustness, preference and decision-theory sections for team review. Updated the public intake procedure and review status.
+- Validation: checked the export checksum, question headers, all item denominators and answer categories, and four A/B mappings. Recalculated the 48 scenario optima and checked cited switches and ties, Pareto counts, screen boundaries, artifact hashes and document links. Checked private Git exclusions.
+- Open: collection provenance, prior exposure, quantitative input confirmation and matched after-result review. A/B's PRs are pending and the shared-code handoff still depends on review of #7.
+- Next: confirm each participant's dated input card for the designated comparison. Show the resulting consequences and trade-offs, then record any confirmed revisions privately. Resolve candidate and validity rules through the reviewed A/B handoff.
+- PR: continues [#8](https://github.com/scenariofour/cee5980-ai-model-selection/pull/8).
+
+### 2026-11-13 — work/scenariofour/member-c-sensitivity
+
+- Owner: scenariofour, Member C. Files: docs/PREFERENCE_ELICITATION_PROTOCOL.md, docs/SENSITIVITY_AND_REVIEW.md, CHANGELOG.md and this entry.
+- Completed: documented scoped confirmation for a ranking while cutoff decisions remain open, reporting for pending and empty feasible sets, and how to record exposure and interpretation during review. Participant-specific records and results are kept in ignored private deliverables.
+- Validation: checked frozen input and sensitivity artifact hashes, the 48 illustrative cases, tied switch points, clarification boundaries, item-level counts, document links and private exclusions. Seven sensitivity unit tests passed.
+- Open: group review is incomplete. A/B's candidate and measurement questions await reviewed integration, and PR #7 still holds the shared-code handoff.
+- Next: confirm outstanding input cards privately, review the consequences with participants and record any dated revisions. Follow the reviewed A/B handoff before adopting candidate changes.
+- PR: continues [#8](https://github.com/scenariofour/cee5980-ai-model-selection/pull/8).
+
+### 2026-11-21 — work/scenariofour/member-c-sensitivity
+
+- Owner: scenariofour, Member C. Public files: docs/PREFERENCE_ELICITATION_PROTOCOL.md, docs/SENSITIVITY_AND_REVIEW.md, CHANGELOG.md and this entry.
+- Completed: clarified how review records represent retained settings, deferred decisions and requests for evidence, and how retrospective dates differ from an audit timestamp. Prepared the private comparison audit, English review synthesis and report handoff in ignored deliverables.
+- Validation: baseline reproduction left existing data/result/figure files byte-identical. Checked all 48 saved scenario optima independently, private score calculations and source locators, document links and private exclusions. Seven existing sensitivity tests passed.
+- Open: A/B candidate and measurement definitions still need reviewed integration. The shared-code editor handoff remains conditional on PR #7 review.
+- Next: review A/B/C's PRs, settle the integrated specification and use the private report handoff for course-report assembly. Regenerate affected numerical outputs only after an integrated analytical change requires it.
+- PR: continues [#8](https://github.com/scenariofour/cee5980-ai-model-selection/pull/8).
+
 ### Entry template
 
 Copy this template for your own branch; preserve existing entries.
