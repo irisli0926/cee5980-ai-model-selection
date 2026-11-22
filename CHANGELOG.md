@@ -1,5 +1,9 @@
 # Change log
 
+## Integrate the independent submission reviews (2026-11-21)
+
+Combined the review record from PR #11 and the analysis audit and documentation corrections from PR #12 on the PR #10 branch. Updated the submission checklist with the report revisions each reviewer owns. Verified the merged documentation and preserved the audited report and analytical artifacts byte for byte.
+
 ## Add the final project review package (2026-11-21)
 
 Added the final report in PDF, Word and Git-readable formats, the course rubric and assignment requirements, the original TA feedback transcribed from the proposal-revision discussion, the team's earlier response, and a read-only Claude audit. Linked the package from the repository README and included the synthetic Qwen run evidence that supports the report appendix. The baseline and sensitivity calculations are unchanged.
@@ -7,6 +11,12 @@ Added the final report in PDF, Word and Git-readable formats, the course rubric 
 ## Audit candidate eligibility and joint clarification requirements (2026-11-21)
 
 Added a four-scenario candidate-set comparison, exact clarification–P95 feasibility boundary and a worked example of a Pareto configuration that cannot maximize the baseline linear additive score. The audit uses the frozen data, original anchors, profiles and screen. At the original 15 s ceiling, admitting the single excluded GLM-4.6 row changes maximum available clarification from 58% to 63%, while the original profiles keep their unscreened winners. Documented the two flagged-row removals as diagnostics. The baseline, prior sensitivity computations and frozen inputs remain intact. Reproduced all 27 data, result and figure files byte-for-byte in an isolated verification directory, ran the independent baseline audit and passed the seven sensitivity unit tests.
+
+## Independent submission audit and current method status (2026-11-21)
+
+Corrected stale pending-integration and review-status wording in the sensitivity guide while preserving its historical task-start and cross-review notes. Added a revision-specific public analysis audit that separates integrated main from the unmerged candidate-set extension. No raw data, code, value functions, weights, thresholds or numerical artifacts changed. Course-report findings and participant-specific calculations remain in ignored local materials.
+
+Validation: reproduced all five requested audit commands at revision `339b5b42fcb96194b1b49d3ebe744908879bbe68` in an isolated archive; all seven sensitivity tests passed and all 27 data/result/figure files were byte-identical after regeneration. Checked the merged integration PR and the open extension PR, the documentation links and private exclusions. The public note distinguishes independent scalar baseline verification from the extension runner's internal assertions. Original participant confirmations, the course template and submission approvals remain team checks.
 
 ## Integrate the final project analyses (2026-11-21)
 

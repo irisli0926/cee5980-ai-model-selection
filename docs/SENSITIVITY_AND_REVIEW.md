@@ -1,6 +1,8 @@
 # Sensitivity analysis and preference review
 
-Member C: scenariofour. Experiment protocol recorded on 2026-11-05 before running comparisons. All preferences and requirements remain illustrative.
+Member C: scenariofour. Experiment protocol recorded on 2026-11-05 before running comparisons. All public scenario profiles and thresholds remain illustrative.
+
+Integration status checked on 2026-11-21: A/B/C's work was integrated through [PR #9](https://github.com/irisli0926/cee5980-ai-model-selection/pull/9), merged as `f849e698b606497abbee91b60401aa744a31e55d`. Individual comparison records are maintained privately. The historical task-start and cross-review notes below describe the earlier branch state. See the [independent analysis audit](ANALYSIS_AUDIT_2026-11-21.md) for the revision-specific reproduction results and the separate, unmerged robustness extension.
 
 ## Three milestones
 
@@ -12,7 +14,7 @@ Member C: scenariofour. Experiment protocol recorded on 2026-11-05 before runnin
 
 This task owns `sensitivity.py`, `tests/test_sensitivity.py`, this document, new `results/robustness_*.csv`, `results/sensitivity_*.csv`, `results/member_c_verification.json`, and `figures/04_preference_paths.png`, with scoped handoff/changelog additions. Private questions and response records stay in ignored `deliverables/member_c/`.
 
-Member B's [PR #7](https://github.com/scenariofour/cee5980-ai-model-selection/pull/7) is unmerged at task start. Its conditional handoff reports no arithmetic correction. This independent extension reads the baseline through `analysis.py` without editing shared code, notebook or baseline artifacts. Integration into the shared entry point waits for the reviewed handoff. Member A's [PR #6](https://github.com/scenariofour/cee5980-ai-model-selection/pull/6) is also unmerged; proposed candidate/validity corrections are not adopted here.
+At task start, Member B's [PR #7](https://github.com/scenariofour/cee5980-ai-model-selection/pull/7) was unmerged. Its conditional handoff reported no arithmetic correction. This independent extension read the baseline through `analysis.py` without editing shared code, notebook or baseline artifacts. Integration awaited the reviewed handoff. Member A's [PR #6](https://github.com/scenariofour/cee5980-ai-model-selection/pull/6) was also unmerged then. The later integration preserved the original candidate rule; the proposed candidate/validity changes were not adopted as baseline policy.
 
 ## Fixed experiment protocol
 
@@ -37,13 +39,13 @@ Explain screen infeasibility with overlapping per-requirement failure counts and
 
 ## Preference-review procedure
 
-For the general-audience English survey, team/outside-participant separation and analysis rules, follow [PREFERENCE_ELICITATION_PROTOCOL.md](PREFERENCE_ELICITATION_PROTOCOL.md). The 14-question survey supplies descriptive preferences and hypothetical choices. A separate facilitated team module is needed to confirm swing weights and benchmark cutoffs. Descriptive results are recorded privately. Human pretest status and matched participant review remain unresolved.
+For the general-audience English survey, team/outside-participant separation and analysis rules, follow [PREFERENCE_ELICITATION_PROTOCOL.md](PREFERENCE_ELICITATION_PROTOCOL.md). The 14-question survey supplies descriptive preferences and hypothetical choices. A separate facilitated team module confirms swing weights and benchmark cutoffs. Descriptive results and individual comparison reviews are recorded privately. Human pretest status remains unresolved. Any claim about a participant's confirmation, exposure or reaction must be checked against that person's original record; reproducing the public calculations cannot establish it.
 
 In the facilitated team module, give each decision participant the same private questions: workflow and task; objectives/metric relevance; essential versus negotiable limits; valued changes over the stated consequence ranges; and reasons. Define technical terms before asking for judgments. Record date, participant identity privately, and prior exposure to preliminary winners. Ask about ranges and trade-offs before proposing weights. Do not interpret a casual importance ranking as additive swing weights.
 
 Freeze confirmed inputs and their version before a designated comparison. The input card specifies whether the participant has confirmed a ranking without screening or a ranking with a complete set of cutoff decisions. Then show the same consequence tables and trade-offs, ask what surprised participants and what they retain or revise, and record the reason and any disagreement. Distinguish revisions to objectives, proxies, scales, candidates, weights and requirements. Exploratory results already exist. The timing claim applies to the designated comparison, with prior exposure documented separately.
 
-Normative analysis makes alternatives, criteria, trade-offs and feasibility explicit. Constructive decision aiding additionally examines how the decision frame and preferences develop through actual participant review. Numerical sensitivity supports that conversation but cannot substitute for it. A priori/a posteriori refers here to when preferences are articulated, not Bayesian updating. Group responses, when obtained, describe this group rather than enterprise-wide preferences.
+Normative analysis makes alternatives, criteria, trade-offs and feasibility explicit. Constructive decision aiding additionally examines how the decision frame and preferences develop through actual participant review. Numerical sensitivity supports that conversation but cannot substitute for it. A priori/a posteriori refers here to when preferences are articulated, not Bayesian updating. Group responses describe this group rather than enterprise-wide preferences.
 
 ## Reproduction
 
@@ -86,7 +88,7 @@ With frozen anchors, all six profile/workflow winner sets remain unchanged in ea
 | maximum latency | [0.46, 355.17] | [0.96, 473.49] | none of the six |
 | union | [0.46, 224.69] | [0.96, 473.49] | structured resource_focused → Command A Reasoning (FC) |
 
-All other selections stay at baseline under these three reanchored experiments. Command A Reasoning has structured 73.58%, avoidance 86.75%, benchmark cost USD 3.04 and P95 8.39 s. The changed resource-focused choice is attributable to changing the cost range and thus the marginal trade-off implied by fixed weights. It is not evidence that removing expensive configurations improves model capability. Omitting the high-latency zero-call-score row is an influence diagnostic, not proof that its measurement is invalid. The validity/eligibility issues raised in A/B's unmerged reviews remain separate decisions.
+All other selections stay at baseline under these three reanchored experiments. Command A Reasoning has structured 73.58%, avoidance 86.75%, benchmark cost USD 3.04 and P95 8.39 s. The changed resource-focused choice is attributable to changing the cost range and thus the marginal trade-off implied by fixed weights. It is not evidence that removing expensive configurations improves model capability. Omitting the high-latency zero-call-score row is an influence diagnostic, not proof that its measurement is invalid. The validity/eligibility policy questions identified by A/B remain open after integration of their reviews.
 
 ## Results: analytic preference-switching intervals
 
@@ -148,4 +150,4 @@ The public robustness/review/theory draft supports a conditional conclusion: the
 
 The illustrative calculations supply material for a normative–constructive comparison. Participant confirmation, dated comparison records and actual reactions establish how that material enters a decision-aiding process. The private review records track retained assumptions, revisions, uncertainty and deferred choices. Each reported recommendation refers to its own specified input model.
 
-Next, review this extension alongside A/B's pending PRs and resolve the candidate and measurement-validity definitions. Use the current private report handoff for individual comparison and review evidence. The review status in the generated verification record describes the original sensitivity run. Integration of shared code and final artifact regeneration remain maintainer tasks after the shared-code handoff.
+Next, resolve the candidate and measurement-validity policy questions using the integrated A/B/C evidence. The separate candidate-set robustness extension remains subject to review; its diagnostic scenarios do not replace the 66-row baseline. Use the current private report handoff for individual comparison and review evidence. The review status in the generated verification record describes the original sensitivity run. Regenerate affected artifacts only when a reviewed analytical change requires it.
