@@ -1,5 +1,11 @@
 # Change log
 
+## Technical report follow-up (2026-11-21)
+
+Edited the report's Appendices A and B in response to the assignment on PR #12: pinned the robustness code/results and the local Qwen logs/protocol to their audited commits, distinguished the independent baseline verifier from the robustness runner's own checks, and added the sensitivity-test command. Clarified in Section 6 that individual unscreened rankings leave feasibility pending and do not revise the illustrative requirements. Preserved the retrospective timing qualifications and all reported scores.
+
+Validation: independently recalculated all three Table 5 comparisons from the frozen CSV, checked all eight Pareto/feasible sets and the saved inclusive joint-boundary jumps, cross-checked all 18 Qwen trial transcripts/records and both described failures, inspected Figure 4, verified the four pinned files through GitHub, and confirmed all tracked data/results/figures unchanged. Private confirmations remain outside Git. Iris will consolidate the Markdown changes into the Word/PDF pair; this branch does not claim a new rendered report.
+
 ## Integrate the independent submission reviews (2026-11-21)
 
 Combined the review record from PR #11 and the analysis audit and documentation corrections from PR #12 on the PR #10 branch. Updated the submission checklist with the report revisions each reviewer owns. Verified the merged documentation and preserved the audited report and analytical artifacts byte for byte.

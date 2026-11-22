@@ -17,6 +17,13 @@ Cross-check the course report against the integrated public source audit, result
 
 ## Task entries
 
+### 2026-11-21 — work/XinruiXu729/report-technical-followup
+
+- Owner: XinruiXu729. Files: docs/submission-review/Report.md (Section 6 and Appendices A/B only), CHANGELOG.md and this entry. Based on PR #10's `3a78b31`; requested in [the PR #12 assignment](https://github.com/irisli0926/cee5980-ai-model-selection/pull/12#issuecomment-7073980277).
+- Completed: added four commit-pinned evidence links, distinguished independent baseline verification from robustness self-checks, and clarified pending feasibility for unscreened individual rankings. Retrospective timing limits and all scores are retained.
+- Validation: independent decimal Table 5 calculations, eight Pareto/feasible sets, all saved inclusive joint-boundary jumps, 18 recorded Qwen trials and both failure descriptions passed. Inspected Figure 4 and checked pinned files through GitHub. Data, generators and numerical artifacts are unchanged. Original participant confirmations remain private.
+- Open and next: Iris should consolidate this patch and Ziling's assigned framing/source edits into one Word/PDF pair and verify the final rendering. Other participant records, course-template identity and the original course AI-use policy/approval status remain team checks. No merge or submission performed.
+
 ### 2026-11-21 — work/XinruiXu729/submission-audit-fixes
 
 - Owner: XinruiXu729. Files: docs/SENSITIVITY_AND_REVIEW.md, docs/ANALYSIS_AUDIT_2026-11-21.md, CHANGELOG.md and this entry.
