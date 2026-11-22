@@ -23,6 +23,7 @@ Cross-check the course report against the integrated public source audit, result
 - Completed: added four commit-pinned evidence links, distinguished independent baseline verification from robustness self-checks, and clarified pending feasibility for unscreened individual rankings. Retrospective timing limits and all scores are retained.
 - Validation: independent decimal Table 5 calculations, eight Pareto/feasible sets, all saved inclusive joint-boundary jumps, 18 recorded Qwen trials and both failure descriptions passed. Inspected Figure 4 and checked pinned files through GitHub. Data, generators and numerical artifacts are unchanged. Original participant confirmations remain private.
 - Open and next: Iris should consolidate this patch and Ziling's assigned framing/source edits into one Word/PDF pair and verify the final rendering. Other participant records, course-template identity and the original course AI-use policy/approval status remain team checks. No merge or submission performed.
+- PR: [#13](https://github.com/irisli0926/cee5980-ai-model-selection/pull/13), targeting `work/irisli0926/robustness-audit` as requested.
 
 ### 2026-11-21 — work/XinruiXu729/submission-audit-fixes
 
