@@ -4,6 +4,8 @@ A reproducible case study of multiobjective model screening: how task requiremen
 
 Canonical repository: https://github.com/scenariofour/cee5980-ai-model-selection
 
+**Final project review.** Open the [review package](docs/submission-review/README.md) for the report, rubric, TA feedback and submission requirements. Start an independent [Claude submission audit](docs/submission-review/CLAUDE_AUDIT.md) from this checkout.
+
 ## Start with Codex
 
 Clone this repository or open its folder in Codex, then ask:
@@ -18,11 +20,13 @@ For the proposed three-person work split, deliverables, acceptance checks and ro
 
 Use Python 3 with requirements.txt, then run `python analysis.py` and `python sensitivity.py` from this directory. The notebook reproduces the baseline and expects analysis.py and data/ alongside it. Run `python scripts/verify_baseline.py` for an independent audit and `python -m unittest discover -s tests` for the sensitivity tests. No API key or paid inference is required. environment_used.json records versions used for the baseline run.
 
+Run `python -m scripts.decision_robustness_audit` for the [candidate-set scenarios, exact clarification boundary, and comparison of Pareto and weighted optima](docs/DECISION_ROBUSTNESS_AUDIT.md).
+
 ## Decision and current stage
 
 The decision is which model configurations to shortlist for a proposed task-management agent under two workflows: structured single-turn calls and missing-parameter clarification. We evaluate workflow score, irrelevant-call avoidance, full-benchmark cost and P95 latency. The outputs show trade-offs and conditional recommendations under specified preferences and requirements.
 
-The project includes a [BFCL source audit](docs/BFCL_GUIDE.md), [independently verified decision methods and worked examples](docs/DECISION_METHODS_AND_EXAMPLES.md), and [sensitivity analysis and review interpretation](docs/SENSITIVITY_AND_REVIEW.md). The public computations use illustrative weights and thresholds. The design team also completed individually specified comparisons and reviewed the trade-offs. Evidence from that review is documented in the private course report materials.
+The project includes a [BFCL source audit](docs/BFCL_GUIDE.md), [independently verified decision methods and worked examples](docs/DECISION_METHODS_AND_EXAMPLES.md), and [sensitivity analysis and review interpretation](docs/SENSITIVITY_AND_REVIEW.md). The public computations use illustrative weights and thresholds. The design team also completed individually specified comparisons and reviewed the trade-offs. The [review report](docs/submission-review/Report.md) summarizes that process.
 
 ## Completed data analysis
 
@@ -49,7 +53,7 @@ Inspect the [preliminary findings](PRELIMINARY_RESULTS.md), [numerical summary](
 - HANDOFF.md: current shared context, task handoffs, open issues and next steps.
 - CHANGELOG.md: substantive changes and validation.
 
-Private course documents, submission drafts, group responses and shared-document links are maintained outside the public repository. Local copies may contain ignored reference/ and TEAM_LINKS.md files.
+The designated report and course review materials are versioned under `docs/submission-review/`. Raw participant records and private shared-document links are maintained separately.
 
 ## Interpretation boundaries
 

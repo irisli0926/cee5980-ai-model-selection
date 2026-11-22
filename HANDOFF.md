@@ -17,6 +17,14 @@ Cross-check the course report against the integrated public source audit, result
 
 ## Task entries
 
+### 2026-11-21 — work/XinruiXu729/submission-audit-fixes
+
+- Owner: XinruiXu729. Files: docs/SENSITIVITY_AND_REVIEW.md, docs/ANALYSIS_AUDIT_2026-11-21.md, CHANGELOG.md and this entry.
+- Completed: audited requested revision `339b5b42fcb96194b1b49d3ebe744908879bbe68` independently, corrected stale integration/review status and recorded public numerical verification. Detailed submission findings and participant arithmetic remain in ignored local materials; the course-review package is not included in this branch.
+- Validation: all five requested reproduction commands completed in an isolated archive; seven tests passed; all 27 data/result/figure files were byte-identical. Checked documentation links, private exclusions and GitHub integration status. No analytical outputs changed. Original participant confirmations and final submission approvals were not independently verified.
+- Open and next: review the documentation PR and the separate candidate-set extension; settle eligibility policy before changing the baseline. The team must confirm its private report records and final submission requirements. No merge or course submission was performed.
+- PR: [#12](https://github.com/irisli0926/cee5980-ai-model-selection/pull/12).
+
 ### 2026-10-21 — work/scenariofour/shared-handoff
 
 - Files: HANDOFF.md, AGENTS.md, ONBOARDING.md, README.md, CHANGELOG.md.
@@ -134,6 +142,27 @@ Cross-check the course report against the integrated public source audit, result
 - Validation: reproduced `analysis.py` and `sensitivity.py`, ran `scripts/verify_baseline.py`, passed all seven sensitivity unit tests and all six notebook cells, checked the frozen input and confirmed that all 25 analyzed data, result and figure files were byte-identical after the run. Counts remain 109 source rows, 66 included rows, 30 and 22 Pareto rows, and 14 and 0 rows passing the illustrative screens.
 - Open and next: reconcile the report wording with the final reviewed draft and confirm individual contributions privately. The report should name the excluded GLM-4.6 counterexample and explain the unresolved zero-call score pattern. A broader eligibility rule would require an explicit follow-up decision and rerun.
 - Integration PR: [#9](https://github.com/irisli0926/cee5980-ai-model-selection/pull/9).
+
+### 2026-11-21 — work/irisli0926/robustness-audit
+
+- Owner: irisli0926. Added `scripts/decision_robustness_audit.py`, `docs/DECISION_ROBUSTNESS_AUDIT.md`, `results/decision_robustness_audit.json` and `figures/05_clarification_feasibility.png`, with README and changelog updates.
+- Completed: compared both eligibility changes singly and jointly at fixed weights, anchors and cutoffs. Reported Pareto membership changes, the full clarification feasibility step function and a worked linear value counterexample. The original 66-row baseline and its 30/22 Pareto counts remain the reference scenario. Inclusion of GLM-4.6 adds one feasible clarification candidate at the original limits in both scenarios in which it is admitted.
+- Validation: reproduced `analysis.py`, `sensitivity.py` and the new audit in an isolated verification directory. The independent baseline verifier and all seven sensitivity unit tests passed. The 27 data, result and figure files were byte-identical after regeneration. An exact decimal cross-check confirmed the eight Pareto and feasibility sets, 224 selected joint-threshold cases and the midpoint example. Reviewed the rendered boundary figure.
+- Open and next: verify eligibility for the intended setting before treating GLM-4.6 as an accepted candidate. The cause of the zero-call pattern is undetermined. Use the exact boundary to discuss which requirements the team considers firm.
+- PR: [#10](https://github.com/irisli0926/cee5980-ai-model-selection/pull/10).
+
+### 2026-11-21 — submission review materials on work/irisli0926/robustness-audit
+
+- Owner: irisli0926. Added [docs/submission-review](docs/submission-review/README.md) at the project owner's direction so both reviewers can audit the report and analysis from one checkout. It includes the original rubric, Assignment 2 TA feedback as supplied by the owner, the team's response, the assignment overview and a Claude prompt.
+- Evidence: the Word and PDF review copies match the reviewed report, and the Markdown has relative figure links. The optional Qwen test appendix is supported by the synthetic run evidence. The baseline and robustness results are unchanged. Raw participant records and private shared-document links are outside the review package.
+- Validation: compared the five source documents byte for byte, checked local links and the nine-page report body, verified the rubric and verbatim feedback against their sources, checked the synthetic case counts and reran the independent baseline verifier.
+- Next: run the two independent audits, resolve the findings, obtain team sign-off on the submission PDF and identify the Gradescope upload owner. See [PR #10](https://github.com/irisli0926/cee5980-ai-model-selection/pull/10).
+
+### 2026-11-21 — independent submission reviews on work/irisli0926/robustness-audit
+
+- Integrated the independent [report audit](docs/submission-review/audits/ZILING_AUDIT.md) from [PR #11](https://github.com/irisli0926/cee5980-ai-model-selection/pull/11) and the [analysis audit](docs/ANALYSIS_AUDIT_2026-11-21.md) and sensitivity guide corrections from [PR #12](https://github.com/irisli0926/cee5980-ai-model-selection/pull/12) into [PR #10](https://github.com/irisli0926/cee5980-ai-model-selection/pull/10). Resolved the changelog conflict by retaining both sets of entries and updated the team checklist.
+- Validation: checked repository paths, the documentation diff and both audit histories. Shared analysis, results and the three report copies match the audited revision.
+- Next: Ziling and Xinrui submit the scoped report patches in the [team checklist](docs/submission-review/BEFORE_SUBMISSION.md). Confirm course AI-use requirements and individual evidence privately. Assemble one matching Word/PDF pair and get team sign-off before submission.
 
 ### Entry template
 
